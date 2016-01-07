@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General" >
+
+    <EditTextPreference
+        android:title="EditText"
+        android:key="name"
+        android:summary="Enter Your Name">
+    </EditTextPreference>
+
+
+    <ListPreference
+        android:title="list"
+        android:key="list"
+        android:summary="this is alist.."
+        android:entries="@array/list"
+        android:entryValues="@array/lvalues"
+       ></ListPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Intro Music set on/off" >
+
+        <CheckBoxPreference
+            android:title="CheckBox1"
+            android:defaultValue="true"
+            android:key="checkbox"
+            android:summary="check this box to enable splash screen music"
+            />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Select your music">
+        <ListPreference
+            android:title="Pick your favourite music"
+            android:key="musicselect"
+            android:defaultValue="1"
+            android:entries="@array/musiclist"
+            android:entryValues="@array/musiclvalues" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/handle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handle" />
+
+    <Button
+        android:id="@+id/handle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handle" />
+
+    <Button
+        android:id="@+id/handle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handle" />
+
+    <Button
+        android:id="@+id/handle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handle" />
+
+
+</LinearLayout>
+
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slidingD"
+        android:handle="@+id/handle"
+        android:content="@+id/content" >
+
+
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handle" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:text="CheckBox"
+                android:id="@+id/cbSlideable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" ></CheckBox>
+
+        </LinearLayout>
+
+
+    </SlidingDrawer>
+
+</FrameLayout>

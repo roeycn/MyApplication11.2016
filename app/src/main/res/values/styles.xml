@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat">
+        <item name="colorPrimary">#ff6a6a</item>
+        <item name="colorPrimaryDark">#6f0038</item>
+        <item name="colorAccent">#8b67a5</item>
+
+        <item name="android:actionOverflowButtonStyle">@color/bright_foreground_inverse_material_light</item>
+    </style>
+
+</resources>

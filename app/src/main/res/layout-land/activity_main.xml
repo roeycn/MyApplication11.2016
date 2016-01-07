@@ -1,0 +1,61 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    >
+
+    <TextView android:text="Welcome!!!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff5e67ff"
+        android:textSize="45dp"
+        android:textIsSelectable="true"
+        android:id="@+id/textView1" />
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="Click to add"
+        android:id="@+id/button1"
+        android:layout_gravity="center_vertical"
+        android:background="#ffb5ff5d"
+        android:onClick="setContentView"
+        android:textSize="20dp"
+        android:gravity="left" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to subtract"
+        android:id="@+id/button2"
+        android:layout_gravity="center_vertical"
+        android:background="#ffff565b"
+        android:onClick="setContentView"
+        android:textSize="20dp"
+         />
+
+        <Button
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="move to next page"
+            android:id="@+id/button3"
+
+
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+    <TextView
+        android:text="hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+

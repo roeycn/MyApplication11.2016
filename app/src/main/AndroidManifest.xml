@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roey.myapplication1" >
+
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+
+
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"   >
+
+            <intent-filter>
+                <action android:name="com.example.roey.myapplication1.MAINACTIVITY" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_main_activity2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Activity2"
+            android:label="@string/title_activity_2"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="com.example.roey.myapplication1.ACTIVITY2" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Menu"
+            android:label="Roey App..." >
+            <intent-filter>
+                <action android:name="com.example.roey.myapplication1.Menu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AboutUs"
+            android:label="Roey App..."
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.roey.myapplication1.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Prefs"
+            android:label="Roey App...">
+            <intent-filter>
+                <action android:name="com.example.roey.myapplication1.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".TextPlay"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name=".Email"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".Camera"
+            android:label="Camera Application"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+        android:name=".Data"
+        android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".GFX"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".GFXsurface"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".SoundStuff"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".GameTest"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".GameTest2"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".Slider"
+            android:label="@string/app_name" >
+        </activity>
+
+
+
+
+
+    </application>
+
+</manifest>
