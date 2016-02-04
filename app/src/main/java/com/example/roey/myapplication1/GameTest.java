@@ -17,6 +17,10 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 
+import com.plattysoft.leonids.ParticleSystem;
+import com.plattysoft.leonids.modifiers.AlphaModifier;
+import com.plattysoft.leonids.modifiers.ScaleModifier;
+
 import java.util.Random;
 
 /**
@@ -211,7 +215,7 @@ public class GameTest extends Activity implements View.OnTouchListener {
 
                  }else {
                      changingX1 = 0;
-                     changingX2 = (canvas.getWidth())/5;
+                     changingX2 = 150;
                  }
 
 
@@ -252,6 +256,9 @@ public class GameTest extends Activity implements View.OnTouchListener {
                         touchmp.start();
                         ourBlue.setARGB(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
                         canvas.drawRect(middleRect, ourBlue);
+
+
+
                     }
 
                 // Update score
@@ -270,26 +277,7 @@ public class GameTest extends Activity implements View.OnTouchListener {
                 ourScore.setTextSize(40);
                 canvas.drawText("Score: " + score + "   Attempts: " + attempts, 10, 50, ourScore);
 
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
 
-                        int RED = 0xffFF8080;
-                        int BLUE = 0xff8080FF;
-/*
-                            ValueAnimator colorAnim = ObjectAnimator.ofInt(score, "backgroundColor", RED, BLUE);
-                            colorAnim.setDuration(3000);
-                            colorAnim.setEvaluator(new ArgbEvaluator());
-                            colorAnim.setRepeatCount(ValueAnimator.INFINITE);
-                            colorAnim.setRepeatMode(ValueAnimator.REVERSE);
-                            colorAnim.start();
-*/
-                        ObjectAnimator anim = ObjectAnimator.ofObject(score,"backgroundColor",new ArgbEvaluator(),Color.RED, Color.BLUE);
-                        anim.setDuration(2000);
-                        anim.start();
-
-                    }
-                });
 
                 ourHolder.unlockCanvasAndPost(canvas);
             }

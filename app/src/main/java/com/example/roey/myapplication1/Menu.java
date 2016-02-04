@@ -22,7 +22,9 @@ public class Menu extends ListActivity  {
 
 
     String classes[] = {"MainActivity" , "TextPlay" ,"Email" ,"Camera" ,
-                          "Data" ,"GFX" , "GFXsurface" , "SoundStuff" , "GameTest" , "Animation" ,"Slider" };
+                          "Data" ,"GFX" , "GFXsurface" , "SoundStuff" , "GameTest" ,
+                        "Animation" ,"Slider" , "Leonids" , "Tabs" , "SimpleBrowser" , "Flipper",
+                        "SharedPrefs" , "InternalData" , "ExternalData"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

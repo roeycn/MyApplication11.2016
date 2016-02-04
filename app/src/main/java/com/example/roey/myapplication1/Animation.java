@@ -113,6 +113,7 @@ public class Animation extends Activity {
 
         // Inflate animation from XML
         android.view.animation.Animation animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
+
 // Setup listeners (optional)
         animFadeOut.setAnimationListener(new android.view.animation.Animation.AnimationListener() {
             @Override
