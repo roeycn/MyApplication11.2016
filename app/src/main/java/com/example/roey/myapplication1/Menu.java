@@ -18,6 +18,8 @@ import android.support.v7.app.ActionBarActivity;
  *
  * skipping 56 57 58
  */
+
+// commit and upload again to github at 02.11.2016
 public class Menu extends ListActivity  {
 
 

@@ -35,6 +35,8 @@ public class Animation extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.animation);
 
+/**
+ *
 
     tv2 = (TextView) findViewById(R.id.tv2);
     tv3 = (TextView) findViewById(R.id.tv3);
@@ -83,6 +85,10 @@ public class Animation extends Activity {
         });
         anim.start();
 */
+
+
+
+
 
          // We can play multiple ObjectAnimator objects together concurrently with the AnimatorSet with:
         AnimatorSet set = new AnimatorSet();
@@ -140,6 +146,8 @@ public class Animation extends Activity {
 
         android.view.animation.Animation animxmltry = AnimationUtils.loadAnimation(this, R.anim.zoom_in);
         newButton2.startAnimation(animxmltry);
+
+
 
     }
 
